@@ -1,0 +1,13 @@
+# Step 1: Open the file (create if not exists)
+file_path = "E:\Python Assignments\copyHello.txt"
+file= open(file_path, 'a+') 
+file.write('abcde')
+file.seek(0)
+pos=file.seek(0)
+print("Current position of Cursor:-> ",pos)
+data = file.read(5)
+print("First 5 characters:", data)
+pos1=file.seek(0)
+print("Current position of Cursor:-> ",pos1)
+total_chars = len(file.read())
+print("Total number of characters in the file:", total_chars)
